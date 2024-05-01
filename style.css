@@ -73,16 +73,16 @@ body{
 }
 .navbar a:hover::after
 {
-    color: #00abf0;
     transform-origin: left;
     transform: scaleX(1);
+    background-color: #00abf0;
 }
 
 .home{
     height: 100vh;
-    /* background: url(priya.jpg)no-repeat; 
+    background: url(priya.jpg)no-repeat; 
     background-size: cover;
-    background-position: center; */
+    background-position: center; 
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -259,20 +259,20 @@ body{
     width: 100%;
 }
 
-/*.home-imgHover{
+.home-imgHover{
     position: absolute;
     top: 0;
     right: 30px;
-    width: 100px;
+    width: 600px;
     height: 100%;
     background: transparent;
     transition: 3s;
     animation: manipActiveHover .1s forwards;
-    animation-delay: 0.3s ;
+    animation-delay: 0.4s ;
 }
 
 .home-imgHover:hover{
-    background-color: antiquewhite;
+    background-color:#081b29 ;
     opacity: 0.8;
 }
 
@@ -288,7 +288,6 @@ body{
     animation-delay: 3s;
     z-index: 100;
 }
-*/
 @keyframes showlight{
     100%{
         width: 0;
