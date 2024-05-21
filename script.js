@@ -27,22 +27,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const pages = document.querySelectorAll('.page');
+    const navLinks = document.querySelectorAll('.navbar a');
+    const sections = document.querySelectorAll('section');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
 
-            const target = link.getAttribute('data-target');
-            pages.forEach(page => {
-                if (page.id === target) {
-                    page.style.display = 'block';
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            sections.forEach(section => {
+                if (section === targetSection) {
+                    section.style.display = 'block';
                 } else {
-                    page.style.display = 'none';
+                    section.style.display = 'none';
                 }
             });
         });
