@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     socialIcons.forEach(icon => {
         icon.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default link behavior
+            e.preventDefault(); 
             const className = icon.querySelector('i').className;
 
             switch (className) {
@@ -47,4 +47,5 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     });
+    document.getElementById('home').style.display = 'block';
 });
